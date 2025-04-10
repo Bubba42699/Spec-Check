@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spec Check</title>
+</head>
+<body class="body2">
+
+
+   <!-- Header Section -->
+   <header>
+    <nav>
+        <div class="logo">Store</div>
+        <ul class="nav-links">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="service.html">Service</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- Search Section -->
+ <br>
+ <br>
+<section class="search-container">
+    <input type="text" id="search-input" placeholder="Search for a specific product..." list="search-history">
+    <datalist id="search-history"></datalist>
+    <button id="search-button">Search</button>
+</section>
+
+
+<!-- Discovery Title -->
+<section class="discovery-section">
+    <h1>Discovery</h1>
+    <hr>
+</section>
+
+<!-- Product Section -->
+<section class="product-list">
+    <div class="product-box">
+        <img src="gaminglaptop.jpg" alt="Gaming Laptop">
+        <h3>Gaming Laptop</h3>
+        <p class="price">$1200</p>
+        <a href="gaminglaptop.html" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="HyperX Gaming Keyboard.webp" alt="Mechanical Keyboard">
+        <h3>Mechanical Keyboard</h3>
+        <p class="price">$150</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="gamingmonitor.webp" alt="Gaming Monitor">
+        <h3>Gaming Monitor</h3>
+        <p class="price">$350</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="gamingmonitor.webp" alt="Gaming Monitor">
+        <h3>Gaming Monitor</h3>
+        <p class="price">$350</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+</section>
+<br>
+<br>
+<section class="product-list">
+    <div class="product-box">
+        <img src="gaminglaptop.jpg" alt="Gaming Laptop">
+        <h3>Gaming Laptop</h3>
+        <p class="price">$1200</p>
+        <a href="gaminglaptop.html" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="HyperX Gaming Keyboard.webp" alt="Mechanical Keyboard">
+        <h3>Mechanical Keyboard</h3>
+        <p class="price">$150</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="gamingmonitor.webp" alt="Gaming Monitor">
+        <h3>Gaming Monitor</h3>
+        <p class="price">$350</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+    <div class="product-box">
+        <img src="gamingmonitor.webp" alt="Gaming Monitor">
+        <h3>Gaming Monitor</h3>
+        <p class="price">$350</p>
+        <a href="#" class="buy-link">Buy</a>
+    </div>
+</section>
+<br>
+<br>
+
+
+<!-- Popup Message -->
+<div id="popup-message">
+    <p>Sorry, the item isn't available yet.</p>
+</div>
+
+<script src="script.js"></script>
+<!--bop-->
+    
+</body>
+</html>
