@@ -2,7 +2,11 @@
 const availableProducts = {
     "gaming laptop": "gaminglaptop.html",
     "mechanical keyboard": "mechanical-keyboard.html",
-    "gaming monitor": "gaming-monitor.html"
+    "gaming monitor": "gaming-monitor.html",
+    "intel i5": "intel i5.html",
+    "gigabyte z790": "gigabyte z790.html",
+    "samsung 990 pro 2tb": "samsung 900 pro 2tb.html",
+    "Crucial Pro DDR5 RAM – 32GB (2x16GB)": "Crucial Pro DDR5 RAM – 32GB (2x16GB).html",
 };
 
 document.getElementById("search-button").addEventListener("click", function() {
