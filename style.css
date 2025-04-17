@@ -44,6 +44,7 @@
 
 
 
+
 /* Scrollbar styling */
   ::-webkit-scrollbar {
     width: 8px;
@@ -288,3 +289,206 @@
         scroll-behavior: smooth;
       }
   }
+
+
+
+
+
+  /*PRODUCT PAGE*/
+  .rating-stars::before {
+    content: '\2605\2605\2605\2605\2606';
+    color: gold;
+  }
+
+
+
+
+
+
+
+  /*BLOG SECTION*/
+.body2 {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #E6E6E6;
+    overflow: hidden;
+    position: relative;
+    overflow: auto; /* or just remove 'overflow' property entirely */
+    height: 100%; /* Make sure the body takes up full height */
+}
+
+
+/* Glowing Circle that Follows the Mouse */
+.glowing-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(13, 255, 13, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: glowing 1s ease-out infinite;
+    box-shadow: 0 0 15px rgba(13, 255, 13, 0.8);
+}
+
+@keyframes glowing {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+}
+
+
+/* Main Blog Article */
+main {
+    padding: 30px;
+}
+
+.blogpost {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #E6E6E6;
+    overflow: hidden;
+    position: relative;
+    overflow: auto; /* or just remove 'overflow' property entirely */
+    height: 100%; /* Make sure the body takes up full height */
+}
+
+.blog-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.article-container {
+    width: 70%;
+    animation: fadeIn 1s ease-out;
+}
+
+#article-title {
+    font-size: 2.5rem;
+    color: #0DFF0D;
+    text-shadow: 0 0 10px #0DFF0D;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+#article-author, #article-date {
+    font-size: 1.2rem;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+}
+
+#article-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: fadeInContent 2s ease-out;
+}
+
+.related-posts {
+    width: 25%;
+    background-color: #1A1A1A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-out;
+}
+
+.related-posts h3 {
+    color: #0DFF0D;
+    margin-bottom: 20px;
+}
+
+.related-posts ul {
+    list-style: none;
+}
+
+.related-posts ul li {
+    margin: 10px 0;
+}
+
+.related-posts ul li a {
+    color: #0DFF0D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.related-posts ul li a:hover {
+    color: #FF2D00;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container {
+        width: 100%;
+    }
+
+    .related-posts {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+/*BUY BUTTON*/
+@keyframes pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pop {
+  animation: pop 1.2s ease-in-out infinite;
+}

@@ -1,11 +1,3 @@
-  // === Mobile Menu Toggle ===
-  const menuBtn = document.querySelector("header button.md\\:hidden");
-  const nav = document.querySelector("nav");
-
-  menuBtn?.addEventListener("click", () => {
-    nav.classList.toggle("hidden");
-  });
-
   // === Cart Logic ===
   const cartBtn = document.querySelector("header button.relative");
   let cartCount = 3;
@@ -176,3 +168,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+
+
+
+  // PRODUCT PAGE
+  const buttons = document.querySelectorAll('.tab-button');
+    const content = document.getElementById('tab-content');
+
+    const tabData = [
+      `This powerful machine is built for extreme gaming. Engineered with the latest RTX 4080 graphics, 2TB NVMe, and liquid-cooled 14th Gen Intel CPU, it's made for those who want no limits.`,
+      `<ul class='list-disc ml-6'><li>Motherboard: ASUS ROG STRIX Z790</li><li>Cooling: Corsair iCUE Liquid AIO</li><li>Ports: USB-C, HDMI, DisplayPort</li><li>WiFi 6 & Bluetooth 5.2</li></ul>`,
+      `<p class='text-yellow-400'>★★★★★ - Best PC I've ever bought! Super fast and great cooling.</p><p class='mt-2'>★★★★★ - Worth every cent. Runs Cyberpunk on ultra with ray tracing, no sweat.</p>`
+    ];
+
+    buttons.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('border-b-2', 'border-[#51ff00]'));
+        btn.classList.add('border-b-2', 'border-[#51ff00]');
+        content.innerHTML = tabData[idx];
+      });
+    });
+
+
+    // PRODUCT IMAGE GALLERY
+    function changeImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
